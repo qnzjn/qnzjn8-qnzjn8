@@ -1,0 +1,165 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.writeButton {
+  background: linear-gradient(120deg, #4285f4, #0f9d58);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.writeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boardList {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 120px 80px;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  font-weight: 600;
+  color: #495057;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 120px 80px;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.row:hover {
+  background-color: #f8f9fa;
+}
+
+.number {
+  text-align: center;
+  color: #868e96;
+}
+
+.title {
+  color: #495057;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageIcon {
+  color: #4285f4;
+}
+
+.author {
+  text-align: center;
+  color: #495057;
+}
+
+.date {
+  text-align: center;
+  color: #868e96;
+}
+
+.views {
+  text-align: center;
+  color: #868e96;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pageButton {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 0.5rem;
+  border: 1px solid #dee2e6;
+  background: white;
+  color: #495057;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageButton:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+  color: #228be6;
+}
+
+.pageButton.active {
+  background: linear-gradient(120deg, #4285f4, #0f9d58);
+  border-color: transparent;
+  color: white;
+}
+
+.ellipsis {
+  color: #adb5bd;
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header,
+  .row {
+    grid-template-columns: 60px 1fr 80px;
+  }
+
+  .date,
+  .views {
+    display: none;
+  }
+
+  .pagination {
+    gap: 0.25rem;
+  }
+
+  .pageButton {
+    min-width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+} 

@@ -1,0 +1,311 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.postHeader {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.postHeader h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.postInfo {
+  display: flex;
+  gap: 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: transform 0.2s;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.02);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.backButton,
+.editButton,
+.deleteButton {
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.backButton {
+  background: linear-gradient(120deg, #4285f4, #0f9d58);
+  color: white;
+  border: none;
+}
+
+.editButton {
+  background: linear-gradient(120deg, #0f9d58, #f4b400);
+  color: white;
+  border: none;
+}
+
+.deleteButton {
+  background: linear-gradient(120deg, #db4437, #f4b400);
+  color: white;
+  border: none;
+}
+
+.backButton:hover,
+.editButton:hover,
+.deleteButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 댓글 섹션 스타일 */
+.commentSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.commentSection h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.commentForm {
+  margin-bottom: 2rem;
+}
+
+.commentInput {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.commentInput:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+.commentSubmit {
+  background: linear-gradient(120deg, #4285f4, #0f9d58);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.commentSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.commentItem {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1.5rem;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.commentAuthor {
+  font-weight: 600;
+  color: #495057;
+}
+
+.commentDate {
+  color: #868e96;
+  font-size: 0.9rem;
+}
+
+.commentContent {
+  color: #495057;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.commentButtons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.commentButtons button {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.commentEditForm {
+  margin-top: 1rem;
+}
+
+.commentEditInput {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.8rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.commentEditButtons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.saveButton {
+  background: #4285f4;
+  color: white;
+  border: none;
+}
+
+.cancelButton {
+  background: white;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem auto;
+  }
+
+  .postHeader {
+    padding: 1.5rem;
+  }
+
+  .postHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .postInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .imageContainer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .backButton,
+  .editButton,
+  .deleteButton {
+    width: 100%;
+  }
+
+  .commentSection {
+    padding: 1.5rem;
+  }
+
+  .commentButtons {
+    flex-direction: column;
+  }
+
+  .commentButtons button {
+    width: 100%;
+  }
+} 
